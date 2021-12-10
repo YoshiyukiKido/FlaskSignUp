@@ -1,4 +1,4 @@
-# Flask_loginとMySQLでログイン＋サインアップ機能
+# Login and Sign-up Functionality with Flask_login and MySQL
 
 ## migrate
 cd LoginSample
