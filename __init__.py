@@ -28,7 +28,7 @@ def create_app():
             user='root',
             password='root',
             database='python_db',
-            charset='utf8'
+            charset='utf8mb4'
         )
 
     return app
