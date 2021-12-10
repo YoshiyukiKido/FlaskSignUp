@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="column is-4 is-offset-4">
+  <h3 class="title">Target List</h3>
+  <div class="box">
+    <a href="/" class="btn btn-success">NEW</a>
+  </div>
+  <div class="box">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Age</th>
+        <th></th>
+        <th></th>
+      </tr>
+    </thead>
+
+    <tbody>
+      {% for user in target %}
+      <tr>
+        <td>{{ target[0] }}</td>
+        <td>{{ target[1] }}</td>
+        <td>{{ target[2] }}</td>
+        <td><a href="/recordlist/" class="btn btn-success">Record List</a></td>
+        <td><a href="/recordlist/" class="btn btn-success">Record List</a></td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </div>
+</div>
+{% endblock %}
